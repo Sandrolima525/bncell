@@ -1,0 +1,83 @@
+html,  body{
+    position: relative;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #000, #000D 35%, #0000),
+    url('../imagem/pexels-jess-bailey-designs-788946.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 128px 50px 128px;
+    animation: zoom 1.5s;
+}
+.im{
+    width: 50px;
+    background-color: red;
+    margin-left: 5px;
+}
+.socialmobi{
+    justify-content: space-around;
+    color: white;
+    width: 80vw;
+    height: 10vh;
+    display: none;
+    margin: auto;
+    align-items: center;
+}
+.socialmobi a i {
+padding: 5px;
+margin-left: 10px;
+font-size: 30px;
+
+}
+.socialmobi i{
+    color: azure;
+}
+
+bn{
+    padding: 15px;
+    font-size: 60px;
+}
+
+i{
+    color: #000;
+
+}
+
+.LOGO{
+    width: 4vw;
+    border-radius: 50%;
+    box-shadow: 0px 1px 8px red;
+
+    
+}
+@media (max-width:768px) {
+    body{
+        padding: 30px 30px 25px 30px;
+        background-image: url('..//imagem/fundomenor.jpg');
+        background-size:cover ;
+        background-position: center;
+        background-color: #0006;
+        background-blend-mode: darken;
+    }
+    .LOGO{
+    width: 50px;
+    }
+
+    .socialmobi{
+        display: flex;
+    }
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
